@@ -1,16 +1,31 @@
 {
-  "name": "webModel",
-  "description":"前端WEB项目模板文件",
+  "name": "webmodel",
+  "description": "前端WEB项目模板文件",
   "author": "wmj",
   "version": "1.0.1",
-  "devDependencies": {
+  "devDependencies": {},
+  "dependencies": {
     "grunt": "^1.0.1",
     "grunt-cli": "^1.0.1",
     "grunt-contrib-less": "^1.4.1",
-    "grunt-contrib-watch": "^1.0.0"
-  },
-  "dependencies": {
+    "grunt-contrib-watch": "^1.0.0",
     "grunt-autoprefixer": "^3.0.4",
     "grunt-css": "^0.5.4"
-  }
+  },
+  "main": "Gruntfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/WMJinger/webModel.git"
+  },
+  "keywords": [
+    "model"
+  ],
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/WMJinger/webModel/issues"
+  },
+  "homepage": "https://github.com/WMJinger/webModel#readme"
 }
