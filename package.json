@@ -1,7 +1,8 @@
 {
-  "name": "projectTest",
+  "name": "webModel",
+  "description":"前端WEB项目模板文件",
   "author": "wmj",
-  "version": "1.0",
+  "version": "1.0.1",
   "devDependencies": {
     "grunt": "^1.0.1",
     "grunt-cli": "^1.0.1",
