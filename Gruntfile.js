@@ -11,21 +11,23 @@ module.exports=function(grunt){
         less: {//less编译配置
             compile: {
                 files: {
-                    'src/common/css/style.css': 'src/common/less/style.less'
+                    'src/common/css/style.css': 'src/common/less/style.less',
+                    'src/common/css/index.css': 'src/common/less/index.less',
                 }
             }
         },
         autoprefixer: {//自动补全兼容性写法
             dist: {
                 files : {
-                    'src/common/css/style.css' : 'src/common/css/style.css'
+                    'src/common/css/style.css' : 'src/common/css/style.css',
+                    'src/common/css/index.css' : 'src/common/css/index.css',
                 }
             }
         },
         cssmin: {//CSS压缩代码
             css: {
                 src:'src/common/css/style.css',
-                dest:'src/common/css/style-min.css'
+                dest:'src/common/css/style.css'
             }
         },
         watch: {//用于监听less文件,当改变时自动编译成css文件
