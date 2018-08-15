@@ -1,12 +1,8 @@
-@import url('./reset.less');
-@import url('./font.less');
-.iconfont {
-  font-family: "iconfont" !important;
-  font-size: 18px;
-  font-style: normal;
-  -webkit-font-smoothing: antialiased;
-  -webkit-text-stroke-width: 0.2px;
-  -moz-osx-font-smoothing: grayscale;
-}
+@import "./theme";
 // ----------writing css here----------
-@main-color:#251421;
+.default-theme{
+  .theme(
+    @main-color:#251421
+  );
+}
+
