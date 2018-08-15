@@ -2,14 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="219568b3-3024-4666-9dfe-641edc47f7a0" name="默认的" comment="test5">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/common/less/public.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/common/less/theme.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/watcherTasks.xml" afterPath="$PROJECT_DIR$/.idea/watcherTasks.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/package-lock.json" afterPath="$PROJECT_DIR$/package-lock.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/common/css/style.css" afterPath="$PROJECT_DIR$/src/common/css/style.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/common/less/style.less" afterPath="$PROJECT_DIR$/src/common/less/style.less" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/common/less/theme.less" afterPath="$PROJECT_DIR$/src/common/less/theme.less" />
     </list>
     <ignored path="webModel.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -95,8 +89,8 @@
       <file leaf-file-name="theme.less" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/common/less/theme.less">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.22222222">
-              <caret line="6" column="4" selection-start-line="6" selection-start-column="4" selection-end-line="6" selection-end-column="4" />
+            <state vertical-scroll-proportion="0.25925925">
+              <caret line="7" column="20" selection-start-line="7" selection-start-column="20" selection-end-line="7" selection-end-column="20" />
               <folding />
             </state>
           </provider>
@@ -123,8 +117,8 @@
         <option value="$PROJECT_DIR$/src/index.html" />
         <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/src/common/less/public.less" />
-        <option value="$PROJECT_DIR$/src/common/less/theme.less" />
         <option value="$PROJECT_DIR$/src/common/less/style.less" />
+        <option value="$PROJECT_DIR$/src/common/less/theme.less" />
       </list>
     </option>
   </component>
@@ -556,8 +550,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/common/less/theme.less">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.22222222">
-          <caret line="6" column="4" selection-start-line="6" selection-start-column="4" selection-end-line="6" selection-end-column="4" />
+        <state vertical-scroll-proportion="0.25925925">
+          <caret line="7" column="20" selection-start-line="7" selection-start-column="20" selection-end-line="7" selection-end-column="20" />
           <folding />
         </state>
       </provider>
