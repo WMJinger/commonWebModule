@@ -1,8 +1,12 @@
 /**
+  name:默认样式入口文件，将编译为style.css
   intro: 主题文件，使用默认样式
+  date:2018-08-20
 **/
 /**
-  主体样式文件
+  name:主题文件
+  intro: 在此调用其他组件文件
+  date:2018-08-20
 **/
 /* http://meyerweb.com/eric/tools/css/reset/ */
 /* v1.0 | 20080212 */
@@ -136,6 +140,19 @@ cite {
   src: url('../font/iconfont.eot#iefix') format('embedded-opentype'), /* IE6-IE8 */ url('../font/iconfont.woff') format('woff'), /* chrome, firefox */ url('../font/iconfont.ttf') format('truetype'), /* chrome, firefox, opera, Safari, Android, iOS 4.2+*/ url('../font/iconfont.svg#iconfont') format('svg');
   /* iOS 4.1- */
 }
+/**
+  name:初始化layui框架
+  date:2018-08-20
+**/
+/*
+  intro: 公用特性样式
+  date:2018-08-17
+*/
+.ellipsis {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
 .iconfont {
   font-family: "iconfont" !important;
   font-size: 18px;
@@ -144,7 +161,7 @@ cite {
   -moz-osx-font-smoothing: grayscale;
 }
 .layui-form-select dl dd.layui-this {
-  background-color: #27a3fb;
+  background-color: #3385bf;
 }
 .layui-form-select dl dd,
 .layui-form-select dl dt {
@@ -184,10 +201,10 @@ cite {
   margin: 0;
 }
 .layui-laypage .layui-laypage-curr .layui-laypage-em {
-  background-color: #27a3fb;
+  background-color: #3385bf;
 }
 .layui-laypage a:hover {
-  color: #27a3fb;
+  color: #3385bf;
 }
 .layui-laypage a,
 .layui-laypage span {
@@ -209,28 +226,28 @@ cite {
 }
 .layui-form-radio > i:hover,
 .layui-form-radioed > i {
-  color: #27a3fb;
+  color: #3385bf;
 }
 .layui-layer .layui-layer-btn {
   text-align: center;
   background-color: #f8f8f8;
 }
 .layui-layer .layui-layer-btn .layui-layer-btn0 {
-  background-color: #27a3fb;
-  border-color: #27a3fb;
+  background-color: #3385bf;
+  border-color: #3385bf;
   color: #fff;
 }
 .layui-layer .layui-layer-btn a {
   line-height: 26px;
-  border-color: #27a3fb;
-  color: #27a3fb;
+  border-color: #3385bf;
+  color: #3385bf;
   border-radius: 4px;
   min-width: 66px;
   box-sizing: border-box;
   background-color: transparent;
 }
 .layui-laydate-content #layui-laydate1 .layui-this {
-  background-color: #27a3fb !important;
+  background-color: #3385bf !important;
 }
 .layui-table-page {
   text-align: right;
@@ -240,8 +257,8 @@ cite {
   margin: 0 0 20px 0;
 }
 .layui-form-checked[lay-skin=primary] i {
-  background-color: #27a3fb;
-  border-color: #27a3fb;
+  background-color: #3385bf;
+  border-color: #3385bf;
 }
 .layui-tab {
   margin-top: 0;
@@ -256,7 +273,7 @@ cite {
   padding-bottom: 0;
 }
 .layui-tab-title .layui-this {
-  color: #27a3fb;
+  color: #3385bf;
 }
 .layui-tab-title li {
   font-size: 12px;
@@ -276,22 +293,22 @@ cite {
   margin-top: -8px;
 }
 .layui-form-checkbox[lay-skin=primary]:hover i {
-  border-color: #27a3fb;
+  border-color: #3385bf;
 }
 .layui-form-checked span,
 .layui-form-checked:hover span {
-  background-color: #27a3fb;
+  background-color: #3385bf;
 }
 .layui-form-onswitch {
-  background-color: #27a3fb;
-  border-color: #27a3fb;
+  background-color: #3385bf;
+  border-color: #3385bf;
 }
 .layui-form-checked i,
 .layui-form-checked:hover i {
-  color: #27a3fb;
+  color: #3385bf;
 }
 .layui-btn {
-  background-color: #27a3fb;
+  background-color: #3385bf;
 }
 .layui-btn-primary {
   background-color: #fff;

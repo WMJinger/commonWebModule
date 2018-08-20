@@ -1,5 +1,6 @@
 /**
-  主体样式文件
+  name:父框架样式
+  date:2018-08-20
 **/
 /* http://meyerweb.com/eric/tools/css/reset/ */
 /* v1.0 | 20080212 */
@@ -133,8 +134,18 @@ cite {
   src: url('../font/iconfont.eot#iefix') format('embedded-opentype'), /* IE6-IE8 */ url('../font/iconfont.woff') format('woff'), /* chrome, firefox */ url('../font/iconfont.ttf') format('truetype'), /* chrome, firefox, opera, Safari, Android, iOS 4.2+*/ url('../font/iconfont.svg#iconfont') format('svg');
   /* iOS 4.1- */
 }
-/*首页左侧菜单栏*/
-/*右侧框架内容*/
+/**
+  name:头部
+  date:2018-08-20
+**/
+/**
+  name:首页左侧菜单栏
+  date:2018-08-20
+**/
+/**
+  name:右侧框架内容
+  date:2018-08-20
+**/
 .index-iconfont {
   font-family: "iconfont" !important;
   font-size: 18px;
@@ -153,7 +164,7 @@ cite {
   box-shadow: 0 2px 8px rgba(1, 47, 73, 0.3);
 }
 .header-bg {
-  background: #27a3fb;
+  background: #3385bf;
   -webkit-background-size: 100%;
   background-size: cover;
   height: 100%;
@@ -189,7 +200,7 @@ cite {
   position: fixed;
   top: 60px;
   left: 0;
-  background-image: linear-gradient(to bottom, #27a3fb, #036db9);
+  background-image: linear-gradient(to bottom, #3385bf, #1e4d6e);
   width: 150px;
   height: 100%;
   z-index: 3;

@@ -1,9 +1,13 @@
 /**
-  主体样式文件
+  name:主题文件
+  intro: 在此调用其他组件文件
+  date:2018-08-20
 **/
-@import url('./reset.less');
-@import url('./font.less');
-@import url('./resetLayui.less');
+@import "reset";
+@import "font";
+@import "resetLayui";
+@import "general";
+
 @font-base-color:#333;
 @font-base-subcolor:#666;
 @font-base-fidcolor:#999;
@@ -21,6 +25,7 @@
 @form-gap:14px;
 
 @images: "../images/";
+
 .iconfont {
   font-family: "iconfont" !important;
   font-size: 18px;
