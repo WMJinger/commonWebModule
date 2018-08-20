@@ -1,3 +1,6 @@
+/**
+  主体样式文件
+**/
 /* http://meyerweb.com/eric/tools/css/reset/ */
 /* v1.0 | 20080212 */
 html,
@@ -119,7 +122,10 @@ i,
 cite {
   font-style: normal;
 }
-/*font S*/
+/*
+  intro:字体图标库信息
+  date:2018-08-17
+*/
 @font-face {
   font-family: "iconfont";
   src: url('../font/iconfont.eot');
@@ -127,12 +133,140 @@ cite {
   src: url('../font/iconfont.eot#iefix') format('embedded-opentype'), /* IE6-IE8 */ url('../font/iconfont.woff') format('woff'), /* chrome, firefox */ url('../font/iconfont.ttf') format('truetype'), /* chrome, firefox, opera, Safari, Android, iOS 4.2+*/ url('../font/iconfont.svg#iconfont') format('svg');
   /* iOS 4.1- */
 }
-/*font E*/
-.iconfont {
-  font-family: "index-iconfont" !important;
+/*首页左侧菜单栏*/
+/*右侧框架内容*/
+.index-iconfont {
+  font-family: "iconfont" !important;
   font-size: 18px;
   font-style: normal;
   -webkit-font-smoothing: antialiased;
-  -webkit-text-stroke-width: 0.2px;
   -moz-osx-font-smoothing: grayscale;
+}
+.header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 60px;
+  box-sizing: border-box;
+  z-index: 4;
+  box-shadow: 0 2px 8px rgba(1, 47, 73, 0.3);
+}
+.header-bg {
+  background: #27a3fb;
+  -webkit-background-size: 100%;
+  background-size: cover;
+  height: 100%;
+  line-height: 60px;
+}
+.logo {
+  padding-left: 20px;
+  font-size: 18px;
+  display: inline;
+  color: #333;
+}
+.logo img {
+  padding-top: 10px;
+}
+.head-nav {
+  float: right;
+}
+.head-nav .head-nav-li {
+  float: left;
+  margin-right: 20px;
+}
+.head-nav .head-nav-li a {
+  font-size: 14px;
+  color: #fff;
+}
+.head-nav .head-nav-li a i {
+  color: #fff;
+  vertical-align: middle;
+  font-size: 18px;
+  margin-right: 4px;
+}
+.left-nav-wrap {
+  position: fixed;
+  top: 60px;
+  left: 0;
+  background-image: linear-gradient(to bottom, #27a3fb, #036db9);
+  width: 150px;
+  height: 100%;
+  z-index: 3;
+  box-shadow: 0 2px 6px rgba(1, 47, 73, 0.1);
+  box-sizing: border-box;
+  overflow: hidden;
+}
+.left-nav-wrap .left-nav {
+  width: 170px;
+  padding-right: 20px;
+  box-sizing: border-box;
+  height: 100%;
+  overflow-y: auto;
+}
+.left-nav-wrap .left-nav li.has-next > .nav-li .next {
+  display: block;
+}
+.left-nav-wrap .left-nav li.current {
+  background-color: #689ac0;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+.left-nav-wrap .left-nav li.current > a {
+  color: #fff;
+}
+.left-nav-wrap .left-nav li.current > a .index-iconfont {
+  color: #fff;
+}
+.left-nav-wrap .left-nav li.current.has-next > .nav-li .next {
+  transform: rotate(60deg);
+}
+.left-nav-wrap .left-nav li ul {
+  position: relative;
+  display: none;
+  border-top: 1px solid #94b7d2;
+}
+.left-nav-wrap .left-nav li ul.on {
+  display: block;
+}
+.left-nav-wrap .nav-li {
+  position: relative;
+  display: block;
+  line-height: 45px;
+  color: #ceeaf9;
+  font-size: 12px;
+  padding: 0 30px 0 14px;
+}
+.left-nav-wrap .nav-li:hover {
+  color: #fff;
+  background-color: #82a2c3;
+  background-color: rgba(255, 255, 255, 0.15);
+}
+.left-nav-wrap .nav-li .index-iconfont {
+  color: #ceeaf9;
+  padding-right: 10px;
+}
+.left-nav-wrap .nav-li .next {
+  display: none;
+  position: absolute;
+  right: 14px;
+  top: 0;
+  padding-right: 0;
+  transition: all 0.2s;
+}
+.right-iframe-wrap {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  padding-top: 60px;
+  padding-left: 150px;
+  box-sizing: border-box;
+  z-index: 1;
+}
+.tab-frame {
+  display: block;
+  width: 100%;
+  height: 100%;
+  border-width: 0;
 }

@@ -1,30 +1,95 @@
 <!DOCTYPE html>
 <html>
 <head>
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 	<title>首页</title>
 	<link href="common/css/index.css" rel="stylesheet" type="text/css" />
-	<!-- 临时样式，请删除 -->
-	<style>
-		div{
-			height: 50px;
-			background-color: #1d365d;
-			line-height: 50px;
-			font-size: 30px;
-			color: #fff;
-			text-shadow: 0 0 10px #000;
-			text-align: center;
-		}
-		h1{
-			text-align: center;
-			margin-top: 20px;
-			font-size: 20px;
-			font-weight: normal;
-		}
-	</style>
 </head>
 <body>
-	<div><i class="iconfont">&#xe62c;</i></div>
-	<h1>欢迎使用less</h1>
+	<div class="header">
+		<div class="header-bg">
+			<a class="logo" href="#">
+				<img src="common/images/logo.png"/>
+			</a>
+			<ul class="head-nav">
+				<li class="head-nav-li">
+					<a href="javascript:;" class="user-head"><i class="index-iconfont">&#xe61c;</i>帮助<span class="badge">9+</span></a>
+				</li>
+				<li class="head-nav-li">
+					<a href="javascript:;" class="user-head"><i class="index-iconfont">&#xe642;</i>工号95247，您好</a>
+				</li>
+				<li class="head-nav-li">
+					<a href="javascript:;"><i class="index-iconfont">&#xe7c2;</i>退出</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+  <div class="left-nav-wrap">
+    <ul class="left-nav">
+      <li>
+        <a class="nav-li" data-url="index-content.html"><i class="index-iconfont">&#xe618;</i>首页<i class="index-iconfont next">&#xe634;</i></a>
+      </li>
+      <li class="has-next">
+        <a class="nav-li"><i class="index-iconfont">&#xe64f;</i>个人中心<i class="index-iconfont next">&#xe634;</i></a>
+        <ul>
+          <li>
+            <a class="nav-li" data-url="个人中心-我的待办.html"><i class="index-iconfont">&#xe8a5;</i>我的待办<i class="index-iconfont next">&#xe634;</i></a>
+          </li>
+          <li>
+            <a class="nav-li" data-url="index-content.html"><i class="index-iconfont">&#xe8a5;</i>我的***<i class="index-iconfont next">&#xe634;</i></a>
+          </li>
+        </ul>
+      </li>
+    </ul>
+	</div>
+  <div class="right-iframe-wrap">
+    <iframe src="index-content.html" class="tab-frame" name="mainFrame" scrolling="yes" frameborder="0" id="mainFrame"></iframe>
+  </div>
+	<script src="common/js/libjs/jquery-1.11.1.min.js"></script>
+  <script type="text/javascript">
+    $(function(){
+      $('.nav-li').bind('click',function(){
+        var navLi = $(this),
+          navLiParent = navLi.parent(),
+          firstNav = navLiParent.closest('li'),
+          url = navLi.attr('data-url'),
+          next = navLi.next('ul').eq(0),
+          allNext = $('.left-nav ul');
+        //如果有二级
+        if(next.length === 1){
+          $('.left-nav li').removeClass('current');
+          //如果二级展开
+          if(next.hasClass('on')){
+            next.slideUp();
+            next.removeClass('on');
+            firstNav.removeClass('current');
+          }else{
+            allNext.slideUp();
+            allNext.removeClass('on');
+            next.slideDown();
+            next.addClass('on');
+            firstNav.addClass('current');
+            navLiParent.addClass('current');
+          }
+        }else{
+          if(navLiParent.parent('ul').hasClass('on')){
+            //如果是展开三级
+            $(this).parent().siblings().removeClass('current');
+            navLiParent.addClass('current');
+          }else{
+            $('.left-nav li').removeClass('current');
+            allNext.slideUp();
+            allNext.removeClass('on');
+            navLiParent.addClass('current')
+          }
+        }
+
+        if (url) {
+          $('#mainFrame').attr('src',url);
+        }
+      });
+    });
+  </script>
 </body>
 </html>

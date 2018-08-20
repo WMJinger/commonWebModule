@@ -1,0 +1,53 @@
+.header(
+  @headH,
+  @font-base-color,
+  @images,
+  @main-color
+){
+  .header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: @headH;
+    box-sizing: border-box;
+    z-index: 4;
+    box-shadow: 0 2px 8px rgba(1, 47, 73, 0.3);
+  }
+
+  .header-bg {
+    background: @main-color;
+    -webkit-background-size: 100%;
+    background-size: cover;
+    height: 100%;
+    line-height: @headH;
+  }
+
+  .logo {
+    padding-left: 20px;
+    font-size: 18px;
+    display: inline;
+    color: @font-base-color;
+    img {
+      padding-top: 10px;
+    }
+  }
+
+  .head-nav {
+    float: right;
+    .head-nav-li {
+      float: left;
+      margin-right: 20px;
+      a {
+        font-size: 14px;
+        color: #fff;
+        i {
+          color: #fff;
+          vertical-align: middle;
+          font-size: 18px;
+          margin-right: 4px;
+        }
+      }
+    }
+  }
+}

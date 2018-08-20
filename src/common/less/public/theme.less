@@ -1,0 +1,52 @@
+/**
+  主体样式文件
+**/
+@import url('./reset.less');
+@import url('./font.less');
+@import url('./resetLayui.less');
+@font-base-color:#333;
+@font-base-subcolor:#666;
+@font-base-fidcolor:#999;
+@warm-color: rgb(230, 126, 34);
+@error-color: rgb(231, 76, 60);
+@done-color: rgb(46, 204, 113);
+
+@radius-size:4px;
+@txt-height:30px;
+@font-base-largesize: 18px;
+@font-base-bigsize: 16px;
+@font-base-size: 14px;
+@font-base-subsize: 12px;
+@block-gap:20px;
+@form-gap:14px;
+
+@images: "../images/";
+.iconfont {
+  font-family: "iconfont" !important;
+  font-size: 18px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.theme(
+  @border-color,
+  @main-color,
+  @body-color,
+  @sub-color1,
+  @sub-color2,
+  @sub-color3,
+  @sub-color4
+) {
+  .resetLayui(
+    @main-color:@main-color,
+    @border-color:@border-color,
+    @radius-size:@radius-size,
+    @font-base-size:@font-base-size,
+    @font-base-color:@font-base-color,
+          @txt-height:@txt-height
+  );
+  .wrapper{
+    padding: @block-gap;
+    font-size: @font-base-size;
+  }
+}

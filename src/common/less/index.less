@@ -1,12 +1,55 @@
-// 首页样式
-@import url('./reset.less');
-@import url('./font.less');
-.iconfont {
-  font-family: "index-iconfont" !important;
+/**
+  主体样式文件
+**/
+@import url('./public/reset.less');
+@import url('./public/font.less');
+@import url('./component/header');
+@import url('./component/leftNav');
+@import url('./component/rightIframe');
+@font-base-color:#333;
+@images: '../images/';
+.index-iconfont {
+  font-family: "iconfont"!important;
   font-size: 18px;
   font-style: normal;
   -webkit-font-smoothing: antialiased;
-  -webkit-text-stroke-width: 0.2px;
   -moz-osx-font-smoothing: grayscale;
 }
-// ---------writing css here------
+.theme(
+  @border-color: #e6e6e6,
+  @main-color: #27a3fb,
+  @body-color: #f5f5f5,
+  @sub-color1:#66c756,
+  @sub-color2:#76a0f7,
+  @sub-color3:#fb6c6c,
+  @sub-color4:#fda428
+);
+.theme(
+  @border-color,
+  @main-color,
+  @body-color,
+  @sub-color1,
+  @sub-color2,
+  @sub-color3,
+  @sub-color4
+){
+  @headH:60px;
+  @navW: 150px;
+  @navH: 100%;
+  .header(
+    @headH:@headH,
+    @font-base-color:@font-base-color,
+    @images:@images,
+    @main-color:@main-color
+  );
+  .leftNav(
+    @headH:@headH,
+    @navW: @navW,
+    @navH: @navH,
+    @main-color:@main-color
+  );
+  .rightIframe(
+    @headH:@headH,
+    @navW:@navW
+  )
+}

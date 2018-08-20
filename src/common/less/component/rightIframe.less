@@ -1,0 +1,23 @@
+/*右侧框架内容*/
+.rightIframe(
+  @headH,
+  @navW
+){
+  .right-iframe-wrap {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    padding-top: @headH;
+    padding-left: @navW;
+    box-sizing: border-box;
+    z-index: 1;
+  }
+  .tab-frame {
+    display: block;
+    width: 100%;
+    height: 100%;
+    border-width: 0;
+  }
+}
