@@ -11,7 +11,7 @@ module.exports=function(grunt){
         less: {//less编译配置
             compile: {
                 files: {
-                    'src/common/css/style.css': 'src/common/less/default.less',
+                    'src/common/css/style.css': 'src/common/less/style.less',
                     'src/common/css/index.css': 'src/common/less/index.less',
                 }
             }
@@ -19,7 +19,7 @@ module.exports=function(grunt){
         autoprefixer: {//自动补全兼容性写法
             dist: {
                 files : {
-                    'src/common/css/style.css' : 'src/common/css/default.css',
+                    'src/common/css/style.css' : 'src/common/css/style.css',
                     'src/common/css/index.css' : 'src/common/css/index.css',
                 }
             }
